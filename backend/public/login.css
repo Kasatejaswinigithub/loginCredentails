@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  min-height: 100vh;       /* full viewport height */
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;  /* stack elements vertically */
+  align-items: center;     /* center children inside container */
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 360px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.8rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;             /* full width inside container */
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+input[type="submit"] {
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background: #00c6fb;
+  transform: translateY(-2px);
+}
+
+a {
+  margin-top: 1rem;
+  display: block;
+  color: #4facfe;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007acc;
+}
